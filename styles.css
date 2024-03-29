@@ -92,3 +92,19 @@ h2,h3,h5{
     margin-bottom: 30px;
 }
 
+@keyframes loop-scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+.animate-scroll {
+animation-name: loop-scroll;
+animation-duration: 10s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
